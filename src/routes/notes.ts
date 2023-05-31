@@ -1,7 +1,7 @@
 import { publicProcedure, router } from "../trpc"
 
 const getNotes = publicProcedure.query(() => {
-  return []
+  return ["this", "is", "a", "test"]
 })
 
 export const notesRouter = router({
