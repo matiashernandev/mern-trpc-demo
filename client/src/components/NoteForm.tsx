@@ -23,7 +23,8 @@ export default function NoteForm() {
     }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setNote({ ...note, [e.target.name]: [e.target.value] })
+        setNote({ ...note, [e.target.name]: e.target.value })
+        console.log(note)
     }
 
     return (
